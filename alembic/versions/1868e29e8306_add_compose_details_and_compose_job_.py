@@ -38,13 +38,13 @@ def upgrade():
         sa.Column('arch', sa.String(length=255), nullable=True),
         sa.Column('compose_id', sa.String(length=255), nullable=False),
         sa.Column('created_on', sa.DateTime(), nullable=False),
-        sa.Column('family', sa.String(length=255), nullable=True)
+        sa.Column('family', sa.String(length=255), nullable=True),
         sa.Column('image_url', sa.String(length=255), nullable=False),
         sa.Column('last_updated', sa.DateTime(), nullable=True),
         sa.Column('output', sa.Text(), nullable=False),
-        sa.Column('release', sa.String(length=255), nullable=True)
-        sa.Column('status', sa.String(length=255), nullable=False)
-        sa.Column('subvariant', sa.String(length=255), nullable=False)
+        sa.Column('release', sa.String(length=255), nullable=True),
+        sa.Column('status', sa.String(length=255), nullable=False),
+        sa.Column('subvariant', sa.String(length=255), nullable=False),
         sa.Column('user', sa.String(length=255), nullable=False),
         sa.Column('image_format', sa.String(length=255), nullable=False),
         sa.Column('image_type', sa.String(length=255), nullable=False),
