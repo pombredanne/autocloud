@@ -35,7 +35,7 @@ def upgrade():
     op.create_table(
         'compose_job_details',
         sa.Column('id', sa.Integer(), nullable=False),
-        sa.Column('arch', sa.String(length=255), nullable=True)
+        sa.Column('arch', sa.String(length=255), nullable=True),
         sa.Column('compose_id', sa.String(length=255), nullable=False),
         sa.Column('created_on', sa.DateTime(), nullable=False),
         sa.Column('family', sa.String(length=255), nullable=True)
