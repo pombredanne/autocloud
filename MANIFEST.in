@@ -1,5 +1,6 @@
 include README.md
 include fedmsg.d/autocloud.py
+include fedmsg.d/endpoints-autocloud.py
 include config/autocloud.cfg
 recursive-include apache *
 recursive-include alembic *
@@ -9,5 +10,6 @@ include autocloud_job
 include autocloud_job.py
 include createdb.py
 include autocloud.service
+include kill_vagrant
 recursive-include autocloud/web/static *
 recursive-include autocloud/web/templates *
