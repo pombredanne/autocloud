@@ -17,7 +17,8 @@ import sqlalchemy as sa
 
 
 def upgrade():
-    op.create_table('compose_details',
+    op.create_table(
+        'compose_details',
         sa.Column('id', sa.Integer(), nullable=False),
         sa.Column('date', sa.DateTime(), nullable=False),
         sa.Column('compose_id', sa.String(length=255), nullable=False,
@@ -56,5 +57,5 @@ def upgrade():
 
 def downgrade():
     op.drop_table('compose_details')
-    os.drop_table('compose_job_details')
+    op.drop_table('compose_job_details')
     pass
