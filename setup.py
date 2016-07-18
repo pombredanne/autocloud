@@ -8,7 +8,7 @@ requires = [
 
 setup(
     name='autocloud',
-    version='0.6',
+    version='0.6.1',
     description='',
     author='Kushal Das',
     author_email='kushaldas@gmail.com',
